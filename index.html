@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>PreEntrega2</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Bienvenido a Music Market</h1>
+        <p>Productos Nacionales e Importados a buen precio</p>
+    </header>
+    
+    <section>
+        <div class="Productos">
+            <div class="producto1">
+                <img src="./img/piano.png" alt="piano" height="50%" width="690px">
+                <h2>Piano de Cola</h2>
+                <p>Precio $1200</p>
+                <button><span class="button_top" onclick="comprar(piano)"> Añadir </span></button>
+            </div>
+            <div class="producto2">
+                <img src="./img/guitarra-electrica.png" alt="electrica">
+                <h2>Guitarra Electrica Fender</h2>
+                <p>Precio $800</p>
+                <button><span class="button_top" onclick="comprar(guitarraElectrica)"> Añadir </span></button>
+            </div>
+            <div class="producto3">
+                <img src="./img/guitarra-acustica.png" alt="acustica">
+                <h2>Guitarra Acustica Yamaha</h2>
+                <p>Precio $200</p>
+                <button><span class="button_top" onclick="comprar(guitarraAcustica)"> Añadir </span></button>
+            </div>
+            <div class="producto4">
+                <img src="./img/bateria.png" alt="bateria" height="50%">
+                <h2>Bateria Acústica</h2>
+                <p> Precio $1000</p>
+                <button><span class="button_top" onclick="comprar(bateria)"> Añadir </span></button>
+            </div>
+            <div class="producto5">
+                <img src="./img/ukulele.png" alt="ukulele">
+                <h2>Ukulele</h2>
+                <p>Precio $250</p>
+                <button><span class="button_top" onclick="comprar(ukulele)"> Añadir </span></button>
+            </div>
+            <div class="producto6">
+                <img src="./img/saxophone.png" alt="saxophone">
+                <h2>Saxophone</h2>
+                <p>Precio $600</p>
+                <button><span class="button_top" onclick="comprar(saxophone)"> Añadir </span></button>
+            </div>
+        </div>
+    </section>
+    <section class="carrito">
+        <h2>Carrito de compras</h2>
+        <h3>Si deseas quitar un producto, solo haz clic en la imagen</h3>
+        <div id="carrito" class="carrito">
+
+        </div>
+        <h2>Total de créditos: $ <span id="dinero"></span> </h2>
+    </section>
+
+    <script src="./JS/code.js"></script>
+    
+</body>
+</html>

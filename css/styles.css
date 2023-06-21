@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+
+.encabezado h1, p, h2, h3{
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+h1, h2{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f2d491;
+}
+
+p{
+    font-size: 25px;
+}
+
+.encabezado img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 450%;
+    padding: auto;
+}
+
+.Productos{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "producto1, producto2, producto3"
+    "producto4, producto5";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.Productos img{
+    width: 100px;
+    padding: 20px;
+}
+.producto4, .producto5, .producto6{
+    padding-top: 80px;
+}
+
+.carrito1 h3{
+    padding-bottom: 50px;
+}
+
+.producto{
+    display: inline-block;
+    align-items: center;
+    
+}
+
+button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+
+
+body {
+    background-color: #f2d491;
+}
+
